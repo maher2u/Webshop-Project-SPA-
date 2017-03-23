@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    @* This is the Header of the shop *@
+    <header>
+        <h3 id="test">Header</h3>
+    </header>
+
+    <div>
+        <div class="row">
+            <p>I am part of _LayoutPage.cshtml</p>
+            @* Just a bootstrap test *@
+            <input type="button" class="btn btn-danger" value="don't press'" />
+        </div>
+
+        @* index.cshtml loads here *@
+        @RenderBody()
+
+    </div>
+
+    @* This is the Footer of the shop *@
+    <footer>
+        <h3>Footer</h3>
+    </footer>
+</body>
+</html>
