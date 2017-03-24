@@ -13,37 +13,40 @@
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
     <title>Webshop</title>
 
-    @* Script files *@
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/validate.js/0.11.1/validate.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.min.js"></script>
-    @* Our custom Javascript goes in this file *@
-    <script src="~/Scripts/CustomJavaScript.js"></script>
-
     @* CSS files *@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     @* Our custom CSS goes in this file *@
     <link rel="stylesheet" href="~/Content/CustomStyleSheet.css" />
 
 </head>
-<body>
+<body ng-app="appRoute">
 
+    @* Bootstrap container for page fluidity *@
     <div class="container">
 
-        <h1>index.cshtml</h1>
-        <h3>blabla. <i>blablablab Blabla.</i> Bla!</h3>
-        <p>sdfdsfsdfdsfdsfdsf... <b>Blabla!</b></p>
-        <br />
+            <div id="main">
 
-        <p>Added this for testing</p>
+                <a href="#/">Main page<span> </span></a>
+                <a href="#/second">Second page</a>
 
-        <div>
-            <input type="text" />
-            <input type="button" name="test" value="test" />
-        </div>
+            </div>
+
+            @* PRODUCT PAGES routed through AngularJS will appear in this div *@
+            <div ng-view style="background-color:brown"></div>
+
 
     </div>
+
+
+
+    @* Script files *@
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/validate.js/0.11.1/validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.js"></script>
+    <script src="~/Scripts/AngularRouting.js"></script>
+    @* Our custom Javascript goes in this file *@
+    <script src="~/Scripts/CustomJavaScript.js"></script>
 </body>
 </html>
