@@ -8,10 +8,10 @@ using WebshopProject.Models;
 namespace WebshopProject.Controllers
 {
     
-    public class StartController : Controller
+    public class HomeController : Controller
     {
-        // GET: Start/index
-        public ActionResult index()
+        // GET: Home/Index
+        public ActionResult Index()
         {
             //My idea is we will use this standard MVC model on index.cshtml, and AngularJS data in product views
             ModelClass shopModel = new ModelClass();
