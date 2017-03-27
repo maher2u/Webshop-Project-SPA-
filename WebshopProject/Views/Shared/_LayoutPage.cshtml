@@ -6,36 +6,40 @@
     <title>@ViewBag.Title</title>
 </head>
 <body class="container-fluid"
-      style="background-color:#0E0B16;
-      background-image:url('~/Content/oracle-girl-2133976_1920.jpg');
-      color:white">
+      style="background-color: #0E0B16;
+      background-image: url('http://i64.tinypic.com/539t03.jpg');
+      background-clip:content-box;
+      background-position:center;
+      color: white">
 
-    @* Shop Header with two rows *@
-    <header style="border-bottom:1px ridge #4717F6">
-        <div class="row">
-            <nav class="col-md-12 navbar navbar-brand">
-                <div class="navbar-header nav-stacked">
-                    <a class="navbar-brand" href="Home/Index">Angular Movies</a>
-                </div>
-            </nav>
-        </div>
+    <content>
 
-        <div class="row">
-            <div class="col-md-12">
-                <p>Movies so sharp you wouldn't let your kids run with them!</p>
+        @* Shop Header with two rows *@
+        <header style="border-bottom:1px ridge #4717F6">
+            <div class="row">
+                <nav class="col-md-12 navbar navbar-brand">
+                    <div class="navbar-header nav-stacked">
+                        <a class="navbar-brand" href="Home/Index"><h1>Angular Movies</h1></a>
+                    </div>
+                </nav>
             </div>
-        </div>
-    </header>
 
-    @*-------index------------------------------------------------*@
-    <div>
-        @* index.cshtml loads here *@
-        @RenderBody()
-    </div>
-    @*------------------------------------------------------------*@
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Movies so sharp you wouldn't let your kids run with them!</p>
+                </div>
+            </div>
+        </header>
+
+        <div class="row">
+            @* index.cshtml loads here *@
+            @RenderBody()
+        </div>
+
+    </content>
 
     @* This is the Footer of the shop *@
-    <footer class="navbar-fixed-bottom text-center" style="background-color: #4717F6; color:white">
+    <footer class="navbar-fixed-bottom text-center" style="background-color: black; color:white">
         <p>Angular Movies © 2017 | PFinnfors WassimElBittar maher2u</p>
     </footer>
 </body>
