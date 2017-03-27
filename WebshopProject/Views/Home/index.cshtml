@@ -11,7 +11,7 @@
 <html>
 <head>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-    <title>Webshop</title>
+    <title>Angular Movies</title>
 
     @* Script files *@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -20,52 +20,33 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
 
-    @* Our custom Javascript goes in these file *@
-    @*<script src="~/AngularRouting.js"></script>*@
+    @* Our custom Javascript goes in these files *@
+    <script src="~/AngularRouting.js"></script>
     <script src="~/CustomJavaScript.js"></script>
 
     @* CSS files *@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     @* Our custom CSS goes in this file *@
-    <link rel="stylesheet" href="~/Content/CustomStyleSheet.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/CustomStyleSheet.css" />
 
 </head>
-
 <body ng-app="shopApp">
-
     @* Bootstrap container for page fluidity *@
-    <div class="container">
+    <div class="container-fluid">
 
-            <a href="#/">Products</a><span>| |</span>
-            <a href="#/1">Product 1</a><span>| |</span>
-            <a href="#/2">Product 2</a><span>| |</span>
-            <a href="#/3">Product 3</a><span>| |</span>
-
-
-            @* PRODUCT PAGES routed through AngularJS will appear in this div *@
-            <div ng-view></div>
-
+        @* Cart with checkout *@
+        <div id="cart" class="row">
+            <div class="col-md-3">
+                <h4>Cart placeholder</h4>
+                <p>Here movies will appear after you have put them in your cart!</p>
+                <p>Right now, this text is just holding this space until that code is ready...</p>
+            </div>
+            <div class="col-md-9 productPages" style="border:1px solid #4717F6;">
+                @* PRODUCT PAGES routed through AngularJS will appear in this div *@
+                <div ng-view></div>
+            </div>
         </div>
 
-
-    <script>
-        var app = angular.module("shopApp", ["ngRoute"]);
-        app.config(function ($routeProvider) {
-            $routeProvider
-            .when("/", {
-                templateUrl: "/Products/Start"
-            })
-            .when("/1", {
-                templateUrl: "/Products/Product1"
-            })
-            .when("/2", {
-                templateUrl: "/Products/Product2"
-            })
-            .when("/3", {
-                templateUrl: "/Products/Product3"
-            });
-        });
-    </script>
-
+    </div>
 </body>
 </html>
