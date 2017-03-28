@@ -7,5 +7,6 @@ namespace WebshopProject.Models
 {
     public class ModelClass
     {
+        public string Search { get; set; }
     }
 }

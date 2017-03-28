@@ -1,8 +1,5 @@
 ﻿body {
-    width: 1024px;
     margin: 0px auto;
+    width: 1024px;
 }
 
-#test {
-    background-color: lightgray;
-}
