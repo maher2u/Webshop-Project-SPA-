@@ -159,6 +159,7 @@
     <Content Include="Scripts\angular-touch.min.js" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
+    <Content Include="Scripts\AngularRouting.js" />
     <Content Include="Scripts\CustomJavaScript.js" />
     <Content Include="Scripts\errors.json" />
     <Content Include="Scripts\angular.min.js.map" />
@@ -907,6 +908,8 @@
     <Content Include="Scripts\i18n\angular-locale_zu.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Views\Start\_main.html" />
+    <Content Include="Views\Start\_second.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -927,7 +930,7 @@
     </Content>
     <Content Include="Scripts\jquery-1.9.1.min.map" />
     <Content Include="Scripts\version.json" />
-    <None Include="Views\Start\Index.cshtml" />
+    <None Include="Views\Start\index.cshtml" />
     <Content Include="Views\Shared\_LayoutPage.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -938,6 +941,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Start\Products\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
