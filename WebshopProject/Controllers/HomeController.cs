@@ -18,5 +18,14 @@ namespace WebshopProject.Controllers
 
             return View(shopModel);
         }
+
+        [HttpGet]
+        public ActionResult Search(ModelClass shopModel, string search)
+        {
+            //Code for search results
+            shopModel.Search = search;
+
+            return View(shopModel);
+        }
     }
 }
