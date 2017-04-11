@@ -132,6 +132,7 @@
     <Content Include="Content\CustomStyleSheet.css" />
     <Content Include="Content\Images\Movie Pic\Central Intelligence.jpg" />
     <Content Include="Content\Images\Movie Pic\Jason_Bourne_%28film%29.jpg" />
+    <Content Include="Content\Images\Untitled.png" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
