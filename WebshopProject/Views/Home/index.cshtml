@@ -28,15 +28,17 @@
     <link rel="stylesheet" type="text/css" href="~/Content/CustomStyleSheet.css" />
     @*Style*@
     <style>
-        .carousel-inner > .item > img,
-        .carousel-inner > .item > a > img {
+        .carousel-inner >.item > img,
+        .carousel-inner >.item > a > img {
             width: 100%;
             margin: auto;
         }
     </style>
 </head>
-
 <body ng-app="shopApp">
+    <div style="font-family:Arial">
+        <h4><a>Action</a>|<a>Adventure</a>|<a>Comedy</a>|<a>Horror</a>|<a>Drama</a>|<a>Mystery</a>|<a>Romance</a>|<a>Thriller</a>|<a>Historical</a>|<a>Animation</a></h4>
+    </div>
     @* Bootstrap container for page fluidity *@
     <div class="container-fluid">
 
@@ -52,10 +54,9 @@
                 <p>Right now, this text is just holding this space until that code is ready...</p>
             </div>
         </div>
-
     </div>
     @*Carousel container *@
-
+    
     <div class="container">
         <br>
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -70,16 +71,16 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                   <img src="http://i65.tinypic.com/5dqg52.jpg" alt="movie1" width:900px height:900px>
+                   <img src="http://i66.tinypic.com/2je4gp1.jpg" alt="movie1" width:900px height:900px>
                 </div>
                 <div class="item">
                     <img src="http://i63.tinypic.com/vrdl4x.jpg" alt="movie2" width:900px height:900px>
                 </div>
                 <div class="item">
-                    <img src="http://i67.tinypic.com/4kfz1h.jpg" alt="movie3" width:900px height:900px>
+                    <img src="http://i65.tinypic.com/rba98l.jpg" alt="movie3" width:900px height:900px>
                 </div>
                 <div class="item">
-                    <img src="http://i67.tinypic.com/a3cm7o.jpg" alt="movie4" width:900px height:900px>
+                    <img src="http://i65.tinypic.com/1y3c6r.jpg" alt="movie4" width:900px height:900px>
                 </div>
             </div>
 
@@ -94,6 +95,7 @@
             </a>
         </div>
     </div>
+    
 </body>
 
 </html>
