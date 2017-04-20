@@ -240,3 +240,7 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+/WebshopProject/Views/Movies/Start.cshtml
+/WebshopProject/Views/Movies/Movie3.cshtml
+/WebshopProject/Views/Movies/Movie2.cshtml
+/WebshopProject/Views/Movies/Movie1.cshtml
