@@ -5,8 +5,9 @@
 }
 
 <!DOCTYPE html>
-@* This page index.cshtml will be our main page, on here we will load product angular-views, angular-ajax forms etc *@
 <html>
+@* This page index.cshtml will be our main page, on here we will load product angular-views, angular-ajax forms etc *@
+
 
 <head>
     <meta charset="utf-8" />
@@ -39,14 +40,14 @@
 
     @* Bootstrap container for page fluidity *@
     <div class="container-fluid">
-
-        @* Cart with checkout *@
         <div id="cart" class="row">
-            <div class="col-md-9" style="border:1px solid #4717F6; border-top:0px none black">
+            <div class="col-md-10" style="border-top:1px groove #808080; border-top:0px none black">
+
                 @* PRODUCT PAGES routed with AngularJS will appear in this div *@
                 <div ng-view></div>
+
             </div>
-            <div class="col-md-3">
+            <div class="col-md-2">
                 <h4>Cart placeholder</h4>
                 <p>Here movies will appear after you have put them in your cart!</p>
                 <p>Right now, this text is just holding this space until that code is ready...</p>
