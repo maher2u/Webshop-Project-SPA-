@@ -8,7 +8,6 @@
 <html>
 @* This page index.cshtml will be our main page, on here we will load product angular-views, angular-ajax forms etc *@
 
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,15 +26,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     @* Our custom CSS goes in this file *@
     <link rel="stylesheet" type="text/css" href="~/Content/CustomStyleSheet.css" />
-    @*Style*@
-    <style>
-        .carousel-inner >.item > img,
-        .carousel-inner >.item > a > img {
-            width: 100%;
-            margin: auto;
-        }
-    </style>
 </head>
+
 <body ng-app="shopApp">
 
     @* Bootstrap container for page fluidity *@
@@ -43,7 +35,7 @@
         <div id="cart" class="row">
             <div class="col-md-10" style="border-top:1px groove #808080; border-top:0px none black">
 
-                @* PRODUCT PAGES routed with AngularJS will appear in this div *@
+                @* PRODUCT PAGES *@
                 <div ng-view></div>
 
             </div>

@@ -26,8 +26,8 @@ namespace WebshopProject.Controllers
             return View();
         }
 
-        // GET: Products/Product3
-        public ActionResult Product3()
+        // GET: Products/Toplist
+        public ActionResult Top2017()
         {
             return View();
         }

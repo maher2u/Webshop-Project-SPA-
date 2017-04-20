@@ -6,3 +6,7 @@
     width: 190px;
     margin-top: 10px;
    }
+
+.minList {
+    list-style:none;
+}

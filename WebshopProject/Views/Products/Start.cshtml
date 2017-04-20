@@ -1,8 +1,8 @@
-﻿@model IEnumerable<WebshopProject.Models.Movie>
+﻿<reference path="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></reference>
+
+@model IEnumerable<WebshopProject.Models.Movie>
 
 <div class="container productPages">
-    
-    
 
     @* Carousel *@
     <div class="row">
@@ -13,16 +13,18 @@
                 <!-- #region Carousel wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                        <img src="http://i66.tinypic.com/2je4gp1.jpg" alt="movie1">
+                        <a href="#/top-2017">
+                            <img src="http://i66.tinypic.com/2je4gp1.jpg" alt="Top movies 2017">
+                        </a>
                     </div>
                     <div class="item">
                         <img src="http://i63.tinypic.com/vrdl4x.jpg" alt="movie2">
                     </div>
                     <div class="item">
-                        <img src="http://i65.tinypic.com/rba98l.jpg" alt="movie3">
+                        <img src="http://i65.tinypic.com/rba98l.jpg" alt="LOTR">
                     </div>
                     <div class="item">
-                        <img src="http://i65.tinypic.com/1y3c6r.jpg" alt="movie4">
+                        <img src="http://i65.tinypic.com/1y3c6r.jpg" alt="Justice League">
                     </div>
                 </div>
                 <!-- #endregion Carousel wrapper for slides -->

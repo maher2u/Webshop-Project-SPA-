@@ -10,7 +10,7 @@ app.config(function ($routeProvider) {
     .when("/2", {
         templateUrl: "/Products/Product2"
     })
-    .when("/3", {
-        templateUrl: "/Products/Product3"
+    .when("/top-2017", {
+        templateUrl: "/Products/Top2017"
     });
 });

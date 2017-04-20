@@ -950,7 +950,7 @@
     <Content Include="Views\Products\Start.cshtml" />
     <Content Include="Views\Products\Product1.cshtml" />
     <Content Include="Views\Products\Product2.cshtml" />
-    <Content Include="Views\Products\Product3.cshtml" />
+    <Content Include="Views\Products\Top2017.cshtml" />
     <Content Include="Views\Home\Search.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
