@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿<reference path="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></reference>
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,11 +21,15 @@
 
                         <div class="navbar-header">
 
-                            <div class="col-md-4">
-                                <img class="log-size" src="~/Content/Images/Untitled.png" />
+                            <div class="col-md-3">
+                                <img class="log-size" src="~/Content/Images/AngLogo.png" />
                             </div>
 
-                            <div class="col-md-7 col-md-offset-1">
+                            <div class="col-md-4 col-md-offset-1">
+                                <p style="color:#F0A830"><i><b>Movies so sharp you wouldn't let your kids run with them</b></i></p>
+                            </div>
+
+                            <div class="col-md-4">
                                 <form action="@Url.Action("Search", "Home")" method="get">
                                     <div class="form-group">
                                         <input type="search" placeholder="Movies" name="search" id="search">
@@ -36,12 +42,8 @@
                     </nav>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <p style="color:black"><i><b>Movies so sharp you wouldn't let your kids run with them!</b></i></p>
-                </div>
-            </div>
         </header>
+
         <div class="row">
             @* index.cshtml loads here *@
             @RenderBody()

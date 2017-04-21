@@ -8,5 +8,10 @@
    }
 
 .minList {
-    list-style:none;
+    list-style: none;
+}
+
+.asideFloat {
+    float: right;
+    margin:0 auto;
 }
