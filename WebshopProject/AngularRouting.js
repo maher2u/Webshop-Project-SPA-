@@ -4,8 +4,8 @@ app.config(function ($routeProvider) {
     .when("/", {
         templateUrl: "/Products/Start"
     })
-    .when("/1", {
-        templateUrl: "/Products/Product1"
+    .when("/JL", {
+        templateUrl: "/Products/JL"
     })
     .when("/2", {
         templateUrl: "/Products/Product2"
