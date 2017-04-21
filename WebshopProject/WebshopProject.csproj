@@ -946,7 +946,7 @@
     <None Include="Views\Home\index.cshtml" />
     <Content Include="Views\Shared\_LayoutPage.cshtml" />
     <Content Include="Views\Products\Start.cshtml" />
-    <Content Include="Views\Products\Product1.cshtml" />
+    <Content Include="Views\Products\JL.cshtml" />
     <Content Include="Views\Products\Product2.cshtml" />
     <Content Include="Views\Products\Top2017.cshtml" />
     <Content Include="Views\Home\Search.cshtml" />

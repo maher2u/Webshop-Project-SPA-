@@ -15,7 +15,7 @@ namespace WebshopProject.Controllers
         }
 
         // GET: Products/Product1
-        public ActionResult Product1()
+        public ActionResult JL()
         {
             return View();
         }
