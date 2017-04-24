@@ -10,70 +10,47 @@ namespace WebshopProject.Models
     {
         public string Search { get; set; }
     }
-    public class Category
+
+    public class Product
     {
-        [Key]
-        public int Id { get; set; }
-        [MaxLength(100)]
-        [DisplayName("Category")]
-        public string CategoryName { get; set; }
-        public string CategoryDescription { get; set; }
-        public virtual List<Movie> Movies { get; set; }
-    }
-    public class Movie
-    {
-        [Key]
-        public int Id { get; set; }
-        [MaxLength(100)]
-        public string MovieName { get; set; }
-        public string MovieDescription { get; set; }
-        [DisplayName("Movie Picture")]
-        public string MovieImage { get; set; }
-        public int Cost { get; set; }
-        public int Quantity { get; set; }
-        [DisplayName("Category")]
-        public int CategoryId { get; set; }
-        public virtual Category category { get; set; }
+        public int ID { get; set; }
+        public string type { get; set; }
+        public string name { get; set; }
+        public string description { get; set; }
+        public string image { get; set; }
+        public string category { get; set; }
+        public decimal price { get; set; }
 
     }
     public class Order
     {
-        [Key]
-        public int Id { get; set; }
+        public int ID { get; set; }
+        public int cartID { get; set; }
+        public int productID { get; set; }
+        public int amount { get; set; }
 
-        public int MoiveId { get; set; }
-        public virtual Movie Movies { get; set; }
-
-        public int CustumertId { get; set; }
-        public virtual Custumer Custumers { get; set; }
-
-        public int TotalCost { get; set; }
-        public DateTime OrderPlaced { get; set; }
-
+        public virtual Product product { get; set; }
+        public virtual Cart cart { get; set; }
     }
-    public class Custumer
+    public class Customer
     {
-        [Key]
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public string BillingAddress { get; set; }
-        public string PhoneNumber { get; set; }
+        public int ID { get; set; }
+        public string email { get; set; }
+        public string password { get; set; }
+        public string firstname { get; set; }
+        public string lastname { get; set; }
+        public string gender { get; set; }
 
-        public virtual List<Order> Orders { get; set; }
+        public virtual List<Cart> carts { get; set; }
     }
     public class Cart
     {
-        [Key]
-        public int Id { get; set; }
+        public int ID { get; set; }
+        public string status { get; set; }
+        public int customerID { get; set; }
 
-        public string CartId { get; set; }
-
-        public int MovietId { get; set; }
-        public int Count { get; set; }
-        public DateTime DateCreated { get; set; }
-
-        public virtual Movie Movie { get; set; }
-
+        public virtual Customer customer { get; set; }
+        public virtual List<Order> orders { get; set; }
     }
 
     public class WebshopContext : DbContext
@@ -83,10 +60,9 @@ namespace WebshopProject.Models
 
         }
 
-        public DbSet<Movie> Movie { get; set; }
-        public DbSet<Category> Category { get; set; }
-        public DbSet<Custumer> Custumer { get; set; }
-        public DbSet<Order> Order { get; set; }
-        public DbSet<Cart> Cart { get; set; }
+        public virtual DbSet<Customer> Customers { get; set; }
+        public virtual DbSet<Cart> Carts { get; set; }
+        public virtual DbSet<Order> Orders { get; set; }
+        public virtual DbSet<Product> Products { get; set; }
     }
 }
