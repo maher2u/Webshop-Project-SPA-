@@ -14,7 +14,7 @@
       color: white">
     <content>
         @* Shop Header with two rows *@
-        <header style="border-bottom:1px ridge #4717F6">
+        <header>
             <div class="row">
                 <div class="container-fluid">
                     <nav class="navbar navbar-inverse">
@@ -45,8 +45,12 @@
         </header>
 
         <div class="row">
-            @* index.cshtml loads here *@
-            @RenderBody()
+            
+            <div class="container col-md-12">
+                @* index.cshtml loads here *@
+                @RenderBody()
+            </div>
+
         </div>
     </content>
     @* This is the Footer of the shop *@

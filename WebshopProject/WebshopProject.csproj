@@ -135,6 +135,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\CustomStyleSheet.css" />
     <Content Include="Content\Images\AngLogo.png" />
+    <Content Include="Content\Images\BlackTransparent.png" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

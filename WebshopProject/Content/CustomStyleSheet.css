@@ -2,6 +2,11 @@
     margin: 0px auto;
     width: 1024px;
 }
+
+.productPages {
+    background-image: url('Images/BlackTransparent.png');
+}
+
 .log-size {
     width: 190px;
     margin-top: 10px;
@@ -9,9 +14,4 @@
 
 .minList {
     list-style: none;
-}
-
-.asideFloat {
-    float: right;
-    margin:0 auto;
 }
